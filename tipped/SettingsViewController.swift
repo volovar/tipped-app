@@ -6,4 +6,10 @@
 //  Copyright © 2016 Michael Volovar. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class SettingsViewController: UIViewController {
+    @IBAction func returnToPreviousView(_ sender: AnyObject) {
+        navigationController?.popViewController(animated: true)
+    }
+}

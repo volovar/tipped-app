@@ -14,6 +14,8 @@
 		4C88DFC21D93602100F26F5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C88DFC01D93602100F26F5F /* LaunchScreen.storyboard */; };
 		4C88DFCD1D93602100F26F5F /* tippedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C88DFCC1D93602100F26F5F /* tippedTests.swift */; };
 		4C88DFD81D93602100F26F5F /* tippedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C88DFD71D93602100F26F5F /* tippedUITests.swift */; };
+		4CBC36261D9DDEB800084A51 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC36251D9DDEB800084A51 /* Icon-60@3x.png */; };
+		4CBC36291D9E0FED00084A51 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC36281D9E0FED00084A51 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		4C88DFD31D93602100F26F5F /* tippedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tippedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C88DFD71D93602100F26F5F /* tippedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tippedUITests.swift; sourceTree = "<group>"; };
 		4C88DFD91D93602100F26F5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CBC36251D9DDEB800084A51 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-60@3x.png"; path = "../../../../Desktop/tipped_assets/Assets/App Icon/Icon-60@3x.png"; sourceTree = "<group>"; };
+		4CBC36281D9E0FED00084A51 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +104,11 @@
 				4C88DFB71D93602000F26F5F /* AppDelegate.swift */,
 				4C88DFB91D93602000F26F5F /* ViewController.swift */,
 				4C88DFBB1D93602000F26F5F /* Main.storyboard */,
+				4CBC36281D9E0FED00084A51 /* SettingsViewController.swift */,
 				4C88DFBE1D93602100F26F5F /* Assets.xcassets */,
 				4C88DFC01D93602100F26F5F /* LaunchScreen.storyboard */,
 				4C88DFC31D93602100F26F5F /* Info.plist */,
+				4CBC36271D9DEA3700084A51 /* images */,
 			);
 			path = tipped;
 			sourceTree = "<group>";
@@ -123,6 +129,14 @@
 				4C88DFD91D93602100F26F5F /* Info.plist */,
 			);
 			path = tippedUITests;
+			sourceTree = "<group>";
+		};
+		4CBC36271D9DEA3700084A51 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				4CBC36251D9DDEB800084A51 /* Icon-60@3x.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CBC36261D9DDEB800084A51 /* Icon-60@3x.png in Resources */,
 				4C88DFC21D93602100F26F5F /* LaunchScreen.storyboard in Resources */,
 				4C88DFBF1D93602100F26F5F /* Assets.xcassets in Resources */,
 				4C88DFBD1D93602000F26F5F /* Main.storyboard in Resources */,
@@ -261,6 +276,7 @@
 			files = (
 				4C88DFBA1D93602000F26F5F /* ViewController.swift in Sources */,
 				4C88DFB81D93602000F26F5F /* AppDelegate.swift in Sources */,
+				4CBC36291D9E0FED00084A51 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,7 +428,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = tipped/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = volovar.tipped;
+				PRODUCT_BUNDLE_IDENTIFIER = com.volovar.tipped;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -424,7 +440,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = tipped/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = volovar.tipped;
+				PRODUCT_BUNDLE_IDENTIFIER = com.volovar.tipped;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -503,6 +519,7 @@
 				4C88DFDE1D93602100F26F5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C88DFDF1D93602100F26F5F /* Build configuration list for PBXNativeTarget "tippedTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +528,7 @@
 				4C88DFE11D93602100F26F5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C88DFE21D93602100F26F5F /* Build configuration list for PBXNativeTarget "tippedUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +537,7 @@
 				4C88DFE41D93602100F26F5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
