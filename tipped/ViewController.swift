@@ -18,17 +18,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        billField.becomeFirstResponder()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        billField.becomeFirstResponder()
     }
     
     @IBAction func onTextInput(_ sender: AnyObject) {
@@ -47,7 +41,6 @@ class ViewController: UIViewController {
     }
 
     @IBAction func calculateTip(_ sender: AnyObject) {
-        
         let tipPercentages = [0.18, 0.2, 0.25]
         
         let bill = Double(billField.text!) ?? 0
